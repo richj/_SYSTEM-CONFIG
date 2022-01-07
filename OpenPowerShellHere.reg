@@ -1,0 +1,31 @@
+Windows Registry Editor Version 5.00
+
+;
+; Add context menu entry to Windows Explorer background
+;
+[HKEY_CLASSES_ROOT\Directory\Background\shell\powershell]
+@="Open PowerShell window here"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\powershell\command]
+@="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath '%V'"
+
+;
+; Add context menu entry to Windows Explorer folders
+;
+[HKEY_CLASSES_ROOT\Directory\shell\powershell]
+@="Open PowerShell window here"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\powershell\command]
+@="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath '%V'"
+
+;
+; Add context menu entry to Windows Explorer drive icons
+;
+[HKEY_CLASSES_ROOT\Drive\shell\powershell]
+@="Open PowerShell window here"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Drive\shell\powershell\command]
+@="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath '%V'"a

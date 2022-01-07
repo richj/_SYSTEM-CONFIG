@@ -1,0 +1,1 @@
+﻿add-steroidsLicense -path D:\MYNE\_SYSTEM\CONFIG\etc\21eb029539be45c69372e29a6b8c66f1ISESteroids_PowerShellSpecialist.license
